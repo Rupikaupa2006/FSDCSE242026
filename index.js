@@ -28,7 +28,7 @@ function sumWithMsg(clbk,msg){
     console.log("Hii , "+ msg +" and your result="+result);
 }
 sumWithMsg(sum,"XYZ");*/
-function login(eror,msg){
+/*function login(eror,msg){
     if(eror){
         console.log("Error: "+eror);
     }
@@ -45,4 +45,15 @@ function loginHandler(username,password,clbk){
     }
 }
 
-loginHandler("rupi15","123",login);
+loginHandler("rupi15","123",login);*/
+//Callback hell
+//Synchronous programming
+/*console.log("One");
+console.log("Two");
+console.log("Three");*/
+//asynchronous programming
+/*console.log("one");
+setTimeout(()=>{
+    console.log("Two");
+},1000);
+console.log("Three");*/
