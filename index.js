@@ -47,13 +47,16 @@ function loginHandler(username,password,clbk){
 
 loginHandler("rupi15","123",login);*/
 //Callback hell
-//Synchronous programming
+//Synchronous programming-synchronous programming is a programming paradigm where tasks are executed one after another in a sequential manner. In synchronous programming, each task must complete before the next one can begin. This means that if a task takes a long time to complete, it can block the execution of subsequent tasks, leading to delays and inefficiencies in the program's execution. Synchronous programming is often used in situations where tasks are dependent on each other and must be executed in a specific order. However, it can also lead to performance issues and reduced responsiveness in applications that require real-time processing or user interaction.
 /*console.log("One");
 console.log("Two");
 console.log("Three");*/
 //asynchronous programming
-/*console.log("one");
-setTimeout(()=>{
+console.log("one");
+/*setTimeout(()=>{
     console.log("Two");
-},1000);
-console.log("Three");*/
+}*/
+for(i=0;i<10000;i++){
+    console.log(i);
+}
+console.log("Three");
