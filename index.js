@@ -61,7 +61,8 @@ console.log("Three");*/
 }
 console.log("Three");
 */
-
+//we are trying to do DOM manipulation here.
+//document.getElementById is part of DOM under windows element.
 //document.getElementById is used to access the HTML element with the specified ID. It returns a reference to the first element with the given ID, allowing you to manipulate its properties and content using JavaScript. In this case, it is used to get a reference to the HTML element with the ID "container" and store it in the variable container for further use in the code.
 const container=document.getElementById("container");
 const button=document.getElementById("btn");
@@ -69,13 +70,23 @@ const button=document.getElementById("btn");
   const h1=document.createElement("h1");//it is not now a part of DOM tree, it is just created in memory. It is not yet visible on the web page until it is appended to a parent element in the DOM tree.
   console.log(h1);
   h1.innerText="Hello I'm using Js";//it is used to set the text content of the h1 element to "Hello I'm using Js". This means that when the h1 element is eventually added to the DOM tree, it will display this text on the web page.
-//console.log(container);
+ const img=document.createElement('img');
+  //console.log(container);
 //console.log(button);
 
 function ping(){
     //alert("server ping");
     container.innerHTML="<h2 style='color: red;'> Welcome to DOM</h2>";// This line of code sets the inner HTML content of the container element to a new heading element with the text "Welcome to DOM". It replaces any existing content within the container with this new heading, effectively updating the displayed content on the web page when the ping function is called.
+    h1.style.backgroundColor='cyan';
+    h1.style.color='red';
     container.appendChild(h1);// This line of code appends the previously created h1 element to the container element. By doing this, the h1 element becomes a child of the container in the DOM tree, making it visible on the web page. The text "Hello I'm using Js" will now be displayed within the container when the ping function is executed.
+    img.src='https://www.w3schools.com/whatis/img_htmltree.gif';
+    img.setAttribute('height',200);
+    img.setAttribute('width',200);
+    container.appendChild(img);
+
 }
-//it is done through DOM manipulation, we can add an event listener to the button element that listens for a click event. When the button is clicked, the ping function will be executed, which will display an alert message saying "server ping". This allows us to create interactive web pages that respond to user actions.
 button.addEventListener("click",ping);
+
+//it is done through DOM manipulation, we can add an event listener to the button element that listens for a click event. When the button is clicked, the ping function will be executed, which will display an alert message saying "server ping". This allows us to create interactive web pages that respond to user actions.
+//tton.addEventListener("click",ping);
