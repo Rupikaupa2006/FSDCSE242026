@@ -1,5 +1,6 @@
 import React from 'react'
-
+//in this file we are trying to craete an IdCard component which will take data as props and then we will render it in the ICardGallery component
+//props are used to pass data from parent component to child component. In this case we are passing data from ICardGallery component to ICard component.
 function ICard({data}) {
   return (
     <div style={{ border:'10px solid plum',height:'400px',width:'400px'}}>

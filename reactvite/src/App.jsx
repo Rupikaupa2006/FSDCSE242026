@@ -1,17 +1,16 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-//component should be in camel case and first letter should be capital
-//object has both properties and methods
+import { useState} from 'react'
 import './App.css'
-import ICard from './components/ICard'
-import ICardGallery from './components/ICardGallery'
-
+// import MyState from './components/MyState'
+// import ColorChange from './components/ColorChange'
+//import NameChange from './components/NameChange'
+import ImageManipulation from './components/ImageManipulation'
 function App() {
   return (
-    <div style={{border:'2px solid plum',width:'800px',height:'1600px'}}>
-      <ICardGallery />
+    <div style={{border:'4px solid pink',width:'1000px',height:'1000px'}}>
+      {/* <MyState/>
+      <ColorChange/> 
+      <NameChange />*/}
+      <ImageManipulation />
     </div>
   )
 }
