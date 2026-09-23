@@ -41,3 +41,7 @@ const wrapper=<div style={{border:'2px solid red'}}>
 <h2>Hey using JSX</h2>
 </div>
 root.render(wrapper);//here we are rendering the element using render method of root
+//in these raect file we are creating an ICard by using JSX and then we are rendering it in the root element using render method of root.
+//wherever we see the word 'use' it indicates we are using hooks.
+//hook is a special function which allows us to use react features in functional components. we can use hooks only in functional components not in class components.
+//we can declare or define initial state of an object and then we can change its state on basis of some event.
