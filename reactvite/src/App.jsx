@@ -4,13 +4,17 @@ import './App.css'
 // import ColorChange from './components/ColorChange'
 //import NameChange from './components/NameChange'
 import ImageManipulation from './components/ImageManipulation'
+import MyUseEffect from './components/MyUseEffect'
+import FetchProducts from './components/FetchProducts'
 function App() {
   return (
     <div style={{border:'4px solid pink',width:'1000px',height:'1000px'}}>
       {/* <MyState/>
       <ColorChange/> 
       <NameChange />*/}
-      <ImageManipulation />
+      {/* <ImageManipulation /> */}
+      {/* <MyUseEffect /> */}
+      <FetchProducts />
     </div>
   )
 }
