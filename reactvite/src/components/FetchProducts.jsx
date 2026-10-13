@@ -8,7 +8,7 @@ function FetchProducts() {
         async function fetchData() {
             try {
                 setLoading(true);
-
+//API is a way for one software  application to request data or services from another.
                 const serverData = await fetch('https://dummyjson.com/products');
 
                 const jsonData = await serverData.json();
@@ -45,7 +45,7 @@ function FetchProducts() {
                 </thead>
         
                 <tbody>
-                    {products.map((ele) => (
+                    {products.map((ele) => (//map transforms an array into another array.In React it transforms data into JSX elements.
                         <tr key={ele.id}>
                             <td>
                                 <img

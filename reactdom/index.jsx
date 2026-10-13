@@ -45,3 +45,7 @@ root.render(wrapper);//here we are rendering the element using render method of 
 //wherever we see the word 'use' it indicates we are using hooks.
 //hook is a special function which allows us to use react features in functional components. we can use hooks only in functional components not in class components.
 //we can declare or define initial state of an object and then we can change its state on basis of some event.
+//lifecycle of react component has three main phases Mounting,Updating,Unmounting.
+//In modern React,we use useEffect instead of the old lifecycle.It is associated with component's lifecycle.
+//props in react are used to pass the data from parent component to child component. props are read only and cannot be modified in child component. props are used to make components reusable. we can pass any type of data as props like string,number,boolean,array,object,function etc.
+//Sandbox is a virtual environment where code runs before actual environment.safe isolated environment where code can run without directly affecting the rest of your system.
