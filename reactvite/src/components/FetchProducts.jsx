@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 function FetchProducts() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         async function fetchData() {
@@ -13,7 +12,6 @@ function FetchProducts() {
                 const serverData = await fetch('https://dummyjson.com/products');
 
                 const jsonData = await serverData.json();
-
                 setProducts(jsonData.products);
 
             } catch (e) {
@@ -26,16 +24,16 @@ function FetchProducts() {
 
         fetchData();
     }, []);
+    function cartData(element){
+
+    }
 
     return (
         <div>
             <h2>Fetch Products</h2>
-
             {loading && <h2 style={{ color: 'red' }}>Loading data...</h2>}
 
-            {error && <h2>Error: {error}</h2>}
-
-            <table border="2">
+            <table border="3"> 
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -45,7 +43,7 @@ function FetchProducts() {
                         <th>Category</th>
                     </tr>
                 </thead>
-
+        
                 <tbody>
                     {products.map((ele) => (
                         <tr key={ele.id}>
@@ -61,6 +59,7 @@ function FetchProducts() {
                             <td>{ele.description}</td>
                             <td>{ele.price}</td>
                             <td>{ele.category}</td>
+                            <td> <button onClick={() => cartData(ele)}> addToCart</button></td>
                         </tr>
                     ))}
                 </tbody>
