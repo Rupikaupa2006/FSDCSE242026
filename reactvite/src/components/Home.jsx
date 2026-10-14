@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'//Link is a component provided by React Router it creates a clickable ink that navigates to a route in the application.
+import {Link,Outlet} from 'react-router-dom'//Link is a component provided by React Router it creates a clickable ink that navigates to a route in the application.
 function Home() {
   return (
     <div>
@@ -14,6 +14,7 @@ function Home() {
                 </li>
                 </ul>
         </nav>
+       <Outlet />{/*Outlet is a component provided by React Router it renders the matched child route component in the parent route component.*/}
     </div>
   )
 }
